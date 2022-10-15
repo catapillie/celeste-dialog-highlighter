@@ -15,4 +15,4 @@ This extension's language is called "Celeste Dialog Document", but targets `.txt
 
 ## Known Issues
 
-If you find a bug, or have a suggestion, please consider opening an issue. Alternatively, we can chat on discord; message me at `catapillie#1927`, or you can find me in the __Mt. Celeste Climbing Association__ Discord server.
+If you find a bug, or have a suggestion, please consider opening an issue. Alternatively, we can chat on discord; message me at `catapillie#1927`, or you can find me in the [Mt. Celeste Climbing Association Discord server](https://discord.gg/celeste).
