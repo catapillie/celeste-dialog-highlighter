@@ -3,6 +3,7 @@
     "displayName": "Celeste Dialog Highlighter",
     "description": "An extension that provides simple syntax highlighting for Celeste Dialog documents.",
     "version": "0.0.1",
+    "publisher": "catapillie",
     "engines": {
         "vscode": "^1.72.0"
     },
@@ -21,5 +22,9 @@
             "scopeName": "source.celeste-dialog",
             "path": "./syntaxes/celeste-dialog.tmLanguage.json"
         }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/catapillie/celeste-dialog-highlighter.git"
     }
 }
