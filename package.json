@@ -1,0 +1,25 @@
+{
+    "name": "celeste-dialog-highlighter",
+    "displayName": "Celeste Dialog Highlighter",
+    "description": "An extension that provides simple syntax highlighting for Celeste Dialog documents.",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.72.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "celeste-dialog",
+            "aliases": ["Celeste Dialog Document", "celeste-dialog"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "celeste-dialog",
+            "scopeName": "source.celeste-dialog",
+            "path": "./syntaxes/celeste-dialog.tmLanguage.json"
+        }]
+    }
+}

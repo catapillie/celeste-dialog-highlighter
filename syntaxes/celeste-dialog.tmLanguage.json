@@ -1,0 +1,158 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "Celeste Dialog Document",
+    "patterns": [
+        {
+            "include": "#commands"
+        },
+        {
+            "include": "#comment"
+        }
+    ],
+    "repository": {
+        "commands": {
+            "patterns": [
+                {
+                    "name": "definition.celeste-dialog",
+                    "match": "^\\s*(\\w+)(=)",
+                    "captures": {
+                        "1": { "name": "support.class" },
+                        "2": { "name": "keyword.operator" }
+                    }
+                },
+                {
+                    "name": "command.escape-character.celeste-dialog",
+                    "match": "\\\\.",
+                    "captures": {
+                        "0": { "name": "constant.character.escape" }
+                    }
+                },
+                {
+                    "name": "command.control.celeste-dialog",
+                    "match": "{(?:break|n|left|right|s|name|#)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" }
+                    }
+                },
+                {
+                    "name": "command.anchor.celeste-dialog",
+                    "match": "{anchor\\s+(top|middle|bottom)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "constant.language" }
+                    }
+                },
+                {
+                    "name": "command.portrait.celeste-dialog",
+                    "match": "{portrait\\s+(none|upsidedown|flip|left|right|pop)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "constant.language" }
+                    }
+                },
+                {
+                    "name": "command.punctuation.celeste-dialog",
+                    "match": "[,.?!]",
+                    "captures": {
+                        "0": { "name": "support.function" }
+                    }
+                },
+                {
+                    "name": "command.text-style.celeste-dialog",
+                    "match": "{\\/?(\\*|~|!|%|big)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" }
+                    }
+                },
+                {
+                    "name": "command.text-speed.celeste-dialog",
+                    "match": "{>>\\s+(\\d*\\.?\\d+)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "constant.numeric" }
+                    }
+                },
+                {
+                    "name": "command.text-reset.celeste-dialog",
+                    "match": "{\\/?>>}",
+                    "captures": {
+                        "0": { "name": "keyword.control" }
+                    }
+                },
+                {
+                    "name": "command.space.celeste-dialog",
+                    "match": "{s\\s+(\\d+)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "constant.numeric" }
+                    }
+                },
+                {
+                    "name": "command.trigger.celeste-dialog",
+                    "match": "{(?:trigger|silent_trigger)\\s+(\\d+)\\s+([^}]*)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "constant.numeric" },
+                        "2": { "name": "comment" }
+                    }
+                },
+                {
+                    "name": "command.savedata.celeste-dialog",
+                    "match": "{savedata([^}]*)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "constant.language" }
+                    }
+                },
+                {
+                    "name": "command.pause.celeste-dialog",
+                    "match": "{(\\d*\\.?\\d+)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "constant.numeric" }
+                    }
+                },
+                {
+                    "name": "command.color.celeste-dialog",
+                    "match": "{#\\s+([A-Fa-f\\d]{6})}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "string" }
+                    }
+                },
+                {
+                    "name": "command.reference.celeste-dialog",
+                    "match": "{\\+(\\w+)}",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "support.class" }
+                    }
+                },
+                {
+                    "name": "portrait.celeste-dialog",
+                    "match": "\\[(\\w+)(?:\\s+(\\w+))?(?:\\s+(\\w+))?([^\\]]*)\\]",
+                    "captures": {
+                        "0": { "name": "keyword.control" },
+                        "1": { "name": "support.class" },
+                        "2": { "name": "keyword.control" },
+                        "3": { "name": "constant.language" },
+                        "4": { "name": "keyword.control" }
+                    }
+                },
+                {
+                    "name": "command.any.celeste-dialog",
+                    "match": "{(?:\\w+(?:\\s+([^}]*))?)?}",
+                    "captures": {
+                        "0": { "name": "keyword.control.less" },
+                        "1": { "name": "constant.language" }
+                    }
+                }
+            ]
+        },
+        "comment": {
+            "name": "comment.line.number-sign.celeste-dialog",
+            "match": "^#.*"
+        }
+    },
+    "scopeName": "source.celeste-dialog"
+}
