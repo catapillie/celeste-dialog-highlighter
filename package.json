@@ -2,7 +2,7 @@
     "name": "celeste-dialog-highlighter",
     "displayName": "Celeste Dialog Highlighter",
     "description": "An extension that provides simple syntax highlighting for Celeste Dialog documents.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "catapillie",
     "engines": {
         "vscode": "^1.72.0"

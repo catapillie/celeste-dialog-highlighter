@@ -114,7 +114,7 @@
                 },
                 {
                     "name": "command.color.celeste-dialog",
-                    "match": "{#\\s+([A-Fa-f\\d]{6})}",
+                    "match": "{#\\s*([A-Fa-f\\d]{6})}",
                     "captures": {
                         "0": { "name": "keyword.control" },
                         "1": { "name": "string" }
@@ -122,7 +122,7 @@
                 },
                 {
                     "name": "command.reference.celeste-dialog",
-                    "match": "{\\+(\\w+)}",
+                    "match": "{\\+\\s*(\\w+)}",
                     "captures": {
                         "0": { "name": "keyword.control" },
                         "1": { "name": "support.class" }
