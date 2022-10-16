@@ -4,6 +4,7 @@
 ### Changed
 - Allow whitespaces for reference commands (`{+ENTRY}`).
 - Make whitespaces optional for color commands (`{+FFFFFF}`).
+- Allow whitespaces before comments.
 
 ## `[0.0.1]` - 2022-10-15
 ### Added

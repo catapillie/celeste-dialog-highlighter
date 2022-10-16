@@ -151,7 +151,7 @@
         },
         "comment": {
             "name": "comment.line.number-sign.celeste-dialog",
-            "match": "^#.*"
+            "match": "^\\s*#.*"
         }
     },
     "scopeName": "source.celeste-dialog"
