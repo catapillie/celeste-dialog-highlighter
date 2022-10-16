@@ -5,6 +5,7 @@
 - Allow whitespaces for reference commands (`{+ENTRY}`).
 - Make whitespaces optional for color commands (`{+FFFFFF}`).
 - Allow whitespaces before comments.
+- Enforce whitespace in `{savedata ...}` command.
 
 ## `[0.0.1]` - 2022-10-15
 ### Added

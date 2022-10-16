@@ -98,7 +98,7 @@
                 },
                 {
                     "name": "command.savedata.celeste-dialog",
-                    "match": "{savedata([^}]*)}",
+                    "match": "{savedata\\s+([^}]*)}",
                     "captures": {
                         "0": { "name": "keyword.control" },
                         "1": { "name": "constant.language" }
